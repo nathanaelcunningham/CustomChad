@@ -51,6 +51,7 @@ local opt = vim.opt
 opt.shiftwidth = 4
 opt.tabstop = 4
 opt.softtabstop = 4
+opt.scrolloff = 8
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
   virtual_text = false,

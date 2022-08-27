@@ -32,7 +32,12 @@ M.lsp = {
       end,
       "Rename",
     },
-    ["<leader>ld"] = { function() vim.diagnostic.open_float() end, "Hover diagnostics" },
+    ["<leader>ld"] = {
+      function()
+        vim.diagnostic.open_float()
+      end,
+      "Hover diagnostics",
+    },
     ["[d"] = {
       function()
         vim.diagnostic.goto_prev()
@@ -45,9 +50,35 @@ M.lsp = {
       end,
       desc = "Next diagnostic",
     },
+    -- dap mappings
     ["<leader>dut"] = {
       function()
         require("dapui").toggle()
+      end,
+    },
+    ["<leader>db"] = {
+      function()
+        require("dap").toggle_breakpoint()
+      end,
+    },
+    ["<leader>dc"] = {
+      function()
+        require("dap").continue()
+      end,
+    },
+    ["<M-8>"] = {
+      function()
+        require("dap").step_over()
+      end,
+    },
+    ["<M-9>"] = {
+      function()
+        require("dap").step_into()
+      end,
+    },
+    ["<M-0>"] = {
+      function()
+        require("dap").step_out()
       end,
     },
   },

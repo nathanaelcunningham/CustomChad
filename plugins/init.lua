@@ -25,14 +25,19 @@ return {
     end,
   },
   ["mfussenegger/nvim-dap"] = {
-      config = function ()
-          require "custom.plugins.nvim-dap"
-        end
+    config = function()
+      require "custom.plugins.nvim-dap"
+    end,
   },
   ["rcarriga/nvim-dap-ui"] = {
-      after = "nvim-dap",
-      config = function ()
-          require "custom.plugins.nvim-dap-ui"
-        end
-  }
+    after = "nvim-dap",
+    config = function()
+      require "custom.plugins.nvim-dap-ui"
+    end,
+  },
+  ["leoluz/nvim-dap-go"] = {
+    config = function()
+      require "custom.plugins.nvim-dap-go"
+    end,
+  },
 }
