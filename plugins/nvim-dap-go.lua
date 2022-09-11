@@ -4,4 +4,4 @@ if not present then
   return
 end
 
-dgo.setup()
+-- dgo.setup()

@@ -81,6 +81,21 @@ M.lsp = {
         require("dap").step_out()
       end,
     },
+    ["<F9>"] = {
+      function()
+        require("dap").step_over()
+      end,
+    },
+    ["<F10>"] = {
+      function()
+        require("dap").step_into()
+      end,
+    },
+    ["<F11>"] = {
+      function()
+        require("dap").step_out()
+      end,
+    },
   },
 }
 
